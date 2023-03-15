@@ -2,11 +2,8 @@ package connectfour
 
 class GameDisplay {
     private var boardSize: String = ""
-//TODO make a char array (row, col) that will be as a game board
 
-        fun makeMove(col: Int, board: MutableList<MutableList<Char>>) {
-            board[board.size-1][col-1] = 'O'
-        }
+
 
     fun initBoard(row: Int, col: Int): MutableList<MutableList<Char>> {
         return MutableList(row) { MutableList(col) { ' ' } }
